@@ -10,11 +10,12 @@
     <ion-label>Select search type</ion-label>
     <ion-select [(ngModel)]="type" (ionChange)="searchChanged($event)">
       <ion-select-option seleted="true" value="">All</ion-select-option>
+      <ion-select-option value="name">Name</ion-select-option>
+      <ion-select-option value="gender">Gender</ion-select-option>
       <ion-select-option value="movie">Movies</ion-select-option>
       <ion-select-option value="series">Series</ion-select-option>
       <ion-select-option value="episode">Episodes</ion-select-option>
-      <ion-select-option value="name">Name</ion-select-option>
-      <ion-select-option value="gender">Gender</ion-select-option>
+
     </ion-select>
   </ion-item>
 

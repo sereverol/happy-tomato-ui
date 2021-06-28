@@ -29,6 +29,10 @@ const routes: Routes = [
     path: 'peli/:id',
     loadChildren: () => import('./peli-details/peli-details.module').then(m => m.PeliDetailsPageModule)
   },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardPageModule)
+  },
 
 ];
 
