@@ -94,7 +94,7 @@ export class RegisterPage implements OnInit {
             data.id = res.body.id;
             data.gender = this.resGender.description;
             this.bs.setUserOnSession(data);
-            this.router.navigate(['/menu']);
+            this.router.navigate(['/pelis']);
             break;
 
           case 'Fail':

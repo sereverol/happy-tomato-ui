@@ -58,7 +58,7 @@ export class LoginPage implements OnInit {
           case 'Success':
             this.bs.toast(res.message, 2000, 'top');
             this.bs.setUserOnSession(res.body[0]);
-            this.router.navigate(['/menu']);
+            this.router.navigate(['/pelis']);
             break;
 
           case 'Fail':
